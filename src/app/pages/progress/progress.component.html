@@ -2,11 +2,11 @@
   <div class="col-12">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Striped Progress bar</h4>
+        <h4 class="card-title">Striped Progress bar{{progreso1}}</h4>
         <div class="collapse m-t-15" id="pgr3"></div>
         <div class="progress m-t-20">
           <div
-            class="progress-bar bg-promary progress-bar-striped active"
+            class="progress-bar bg-info progress-bar-striped active"
             style="height: 10px"
             [style.width]="getProgreso1()"
             role="progressbar"
@@ -31,6 +31,7 @@
         <app-incrementador
           [valor]="progreso1"
           (valorS)="progreso1 = $event"
+          [btnClass]="'btn-info'"
         ></app-incrementador>
       </div>
     </div>
