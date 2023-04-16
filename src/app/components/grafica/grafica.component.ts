@@ -11,6 +11,7 @@ export class GraficaComponent {
 @Input() public title: string =  'Sin titulo' ;
 
 @Input('labels') doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
+
 @Input('data') doughnutChartData: ChartData<'doughnut'>  = {
       labels: this.doughnutChartLabels,
       datasets: [
@@ -19,5 +20,4 @@ export class GraficaComponent {
       ]
     };
   public doughnutChartType: ChartType = 'doughnut';
-
 }
